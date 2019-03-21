@@ -2,7 +2,7 @@
     <string name="app_name">Cafe oder online</string>
     <string name="welcome_title">Добро пожаловать</string>
     <string name="hint_name">введите имя</string>
-    <string name="toMakeOrder">Сделать 1заказ</string>
+    <string name="toMakeOrder">Сделать заказ</string>
     <string name="hint_pass">введите пароль</string>
     <string name="warning_fields">Необходимо заполнить пустые поля</string>
     <string name="hello_user">"Привет "</string>
