@@ -76,10 +76,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-
             android:background="@drawable/roundshapebtn"
             android:backgroundTint="@color/colorCoffee"
             android:hint="@string/toMakeOrder"
+            android:onClick="makeOrder"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             android:textStyle="bold" />

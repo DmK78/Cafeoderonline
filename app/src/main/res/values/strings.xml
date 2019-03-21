@@ -1,4 +1,32 @@
 <resources>
     <string name="app_name">Cafe oder online</string>
     <string name="welcome_title">Добро пожаловать</string>
+    <string name="hint_name">введите имя</string>
+    <string name="toMakeOrder">Сделать заказ</string>
+    <string name="hint_pass">введите пароль</string>
+    <string name="warning_fields">Необходимо заполнить пустые поля</string>
+    <string name="hello_user">"Привет "</string>
+    <string name="ask_user_order">, что будете заказывать?</string>
+    <string name="tea_button_label">Чай</string>
+    <string name="coffe_radio_button_label">Кофе</string>
+    <string name="addition_title">"Добавки в  "</string>
+    <string name="checkbox_milk_title">Молоко</string>
+    <string name="checkbox_sugar_title">Сахар</string>
+    <string name="checkbox_lemon_title">Лимон</string>
+    <string name="choose_a_drink_title">"Выберите "</string>
+    <string name="tea">чай</string>
+    <string name="coffee">кофе</string>
+    <string name="button_to_send_odrer_descr">Кнопка отправить заказ</string>
+    <string-array name="options_of_coffee">
+        <item>Американо</item>
+        <item>Фрапучино</item>
+        <item>Латте</item>
+        <item>Капучинно</item>
+    </string-array>
+
+    <string-array name="options_of_tea">
+        <item>Черный</item>
+        <item>Зеленый</item>
+        <item>Красный</item>
+    </string-array>
 </resources>
