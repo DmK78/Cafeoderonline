@@ -4,12 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SendOrderActivity">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:id="@+id/textViewOrderTotal"/>
+        android:layout_height="match_parent"
+        >
 
+        <TextView
+            android:id="@+id/textViewOrderTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="90sp" />
+
+
+    </ScrollView>
 </LinearLayout>

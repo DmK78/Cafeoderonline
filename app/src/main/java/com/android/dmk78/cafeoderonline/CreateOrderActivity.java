@@ -34,10 +34,17 @@ public class CreateOrderActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_order);
-        Intent getIntent = getIntent();
 
-        name = getIntent.getStringExtra("name");
-        pass = getIntent.getStringExtra("pass");
+
+        Intent getIntent = getIntent();
+        if (getIntent.hasExtra("name") && getIntent.hasExtra("pass")) {
+            name = getIntent.getStringExtra("name");
+            pass = getIntent.getStringExtra("pass");
+        } else {
+            name = getString(R.string.default_name);
+            pass = getString(R.string.default_pass);
+        }
+
 
         radioButtonCoffee = findViewById(R.id.radioButtonCoffee);
         radioButtonTea = findViewById(R.id.radioButtonTea);
@@ -54,7 +61,6 @@ public class CreateOrderActivity extends AppCompatActivity {
         textViewAddition.setText(getString(R.string.addition_title) + getString(R.string.tea));
         textViewChoose.setText(getString(R.string.choose_a_drink_title) + getString(R.string.tea));
         choosenDrink = getString(R.string.tea);
-
 
 
     }
@@ -92,25 +98,25 @@ public class CreateOrderActivity extends AppCompatActivity {
             orderTotal.append(getString(R.string.tea) + " - ");
             orderTotal.append(spinnerTea.getSelectedItem().toString() + ", ");
 
-            if(checkBoxLemon.isChecked()){
+            if (checkBoxLemon.isChecked()) {
                 orderTotal.append(getString(R.string.checkbox_lemon_title) + ", ");
             }
-            if (checkBoxMilk.isChecked()){
+            if (checkBoxMilk.isChecked()) {
                 orderTotal.append(getString(R.string.checkbox_milk_title) + ", ");
             }
-            if(checkBoxSugar.isChecked()){
-                orderTotal.append(getString(R.string.checkbox_sugar_title)+".");
+            if (checkBoxSugar.isChecked()) {
+                orderTotal.append(getString(R.string.checkbox_sugar_title) + ".");
             }
 
         } else if (choosenDrink == (getString(R.string.coffee))) {
             orderTotal.append(getString(R.string.coffee) + " - ");
             orderTotal.append(spinnerCoffee.getSelectedItem().toString() + ", ");
 
-            if (checkBoxMilk.isChecked()){
+            if (checkBoxMilk.isChecked()) {
                 orderTotal.append(getString(R.string.checkbox_milk_title) + ", ");
             }
-            if(checkBoxSugar.isChecked()){
-                orderTotal.append(getString(R.string.checkbox_sugar_title)+".");
+            if (checkBoxSugar.isChecked()) {
+                orderTotal.append(getString(R.string.checkbox_sugar_title) + ".");
             }
 
 

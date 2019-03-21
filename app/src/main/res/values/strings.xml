@@ -17,6 +17,8 @@
     <string name="tea">чай</string>
     <string name="coffee">кофе</string>
     <string name="button_to_send_odrer_descr">Кнопка отправить заказ</string>
+    <string name="default_name">клиент</string>
+    <string name="default_pass">пароль</string>
     <string-array name="options_of_coffee">
         <item>Американо</item>
         <item>Фрапучино</item>
